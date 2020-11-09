@@ -59,7 +59,7 @@ function draw() {
   //print player
   player.show();
   player.move();
-
+  handlePlayer();
   
   
  
@@ -113,7 +113,7 @@ function draw() {
 }
 
 
-function keyPressed() {
+function handlePlayer() {
   if (keyIsDown(32)|| mouseIsPressed ||keyIsDown(UP_ARROW)) {
     player.jump();
   } else if(keyIsDown(RIGHT_ARROW)){
